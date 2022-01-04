@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
+    "gh-pages": "^3.2.3",
     "git": "^0.1.5",
     "twilio": "^3.30.0"
   }
