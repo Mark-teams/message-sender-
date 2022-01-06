@@ -12,7 +12,7 @@ app.get('/',(req,res)=>{
 })
 
 app.post('/sendmessage',(req,res)=>{
-  console.log("service started",req)
+  console.log("service started")
   client.messages 
       .create({ 
          body: String(req.body.message), 
