@@ -1,10 +1,11 @@
 
 const accountSid = 'AC838ca38a5d59848e369909586b255e06'; 
-const authToken = 'bfef966a3875c2cc0b8bffff3a50cee9'; 
+const authToken = '9ec87737a56f263aad7ddba393b482d2'; 
 const client = require('twilio')(accountSid, authToken); 
 const express=require('express');
 const app=express();
-
+//SID SK74b516194454f6002429908d02e6751e
+// secret i6vWfXlc2PKG3WHFBp7vtbsXaNuIQos1
 // app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.get('/',(req,res)=>{
