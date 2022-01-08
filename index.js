@@ -15,11 +15,10 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/',(req,res)=>{
- console.log(req)
   res.send("hello world");
 })
+
 app.post('/sendmessage',(req,res)=>{
-  console.log("service started",req)
   client.messages 
       .create({ 
          body: req.body.message, 
