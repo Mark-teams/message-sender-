@@ -20,8 +20,8 @@ app.post('/sendmessage',(req,res)=>{
   client.messages 
       .create({ 
          body: req.body.message, 
-         from: 'whatsapp:+14155238886',       
-         to: 'whatsapp:+918667849150' 
+         from: 'whatsapp:+14155238886',   //   
+         to: 'whatsapp:+918925672761' 
        }) 
       .then(messages => res.send(messages.sid))
       .catch(err=> res.send(err)) 
