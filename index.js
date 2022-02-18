@@ -36,13 +36,13 @@ app.post('/SendVonage',(req,res)=>{
         res.send(err)
     } else {
         if(responseData.messages[0]['status'] === "0") {
-          res.send("success")
+          res.send("success",from, to, req.body.message)
           // document.getElementById("PopupWindow").innerHTML=`<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
           // <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
           // <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
           // </svg><h2 align="center">Thanks for your response.<br/> Our team members we call you shortly</h2>`
         } else {
-          res.send("Failed")
+          res.send("Failed",from, to, req.body.message)
           // document.getElementById("PopupWindow").innerHTML=`<svg class="checkmarkError" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
           //   <circle class="checkmark__circleError"  stroke="#FF0000" cx="26" cy="26" r="25" fillError="none" />
           //   <path class="checkmark__check" fill="none" d="M16 16 36 36 M36 16 16 36" />
