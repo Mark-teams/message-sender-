@@ -17,7 +17,7 @@ const vonage = new Vonage({
 })
 
 const from = "Vonage APIs"
-const to = "918220486799"
+const to = "917448874446"
 
 
 app.use(express.urlencoded({ extended: true }));
