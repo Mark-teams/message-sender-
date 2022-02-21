@@ -12,12 +12,12 @@ const client = require('twilio')(accountSid, authToken);
 const Vonage = require('@vonage/server-sdk');
 
 const vonage = new Vonage({
-  apiKey: "30916bdb",
-  apiSecret: "OEfHqA1WB6k5VLJe"
+  apiKey: process.env.VONAGE_API_KEY,
+  apiSecret: process.env.VONAGE_API_SECRETKEY
 })
 
 const from = "Vonage APIs"
-const to = "917448874446"
+const to = process.env.MOBILE_NUMBER
 
 
 app.use(express.urlencoded({ extended: true }));
